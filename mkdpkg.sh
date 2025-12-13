@@ -1,5 +1,6 @@
 #!/bin/bash
 
+python3 generate-themes.py
 mkdir package
 cp -r usr/ package
 cp -r DEBIAN package
