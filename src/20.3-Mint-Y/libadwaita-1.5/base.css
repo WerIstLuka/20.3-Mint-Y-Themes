@@ -942,7 +942,7 @@ window > headerbar.titlebar.default-decoration, window > .titlebar headerbar.def
 
 window > headerbar.titlebar.default-decoration > windowhandle > box, window > .titlebar headerbar.default-decoration > windowhandle > box { padding-bottom: 3px; }
 
-toolbarview > .top-bar headerbar, toolbarview > .bottom-bar headerbar, headerbar.flat, window.shortcuts headerbar.titlebar, window.print headerbar.titlebar, window.pagesetup headerbar.titlebar, window.aboutdialog headerbar.titlebar, window.colorchooser headerbar.titlebar, window.appchooser headerbar.titlebar { background: none; box-shadow: none; color: inherit; min-height: 46px; }
+toolbarview > .top-bar headerbar, toolbarview > .bottom-bar headerbar, headerbar.flat, window.shortcuts headerbar.titlebar, window.print headerbar.titlebar, window.pagesetup headerbar.titlebar, window.aboutdialog headerbar.titlebar, window.colorchooser headerbar.titlebar, window.appchooser headerbar.titlebar { background: @luka_titlebar; box-shadow: none; color: inherit; min-height: 46px; }
 
 toolbarview > .top-bar headerbar > windowhandle > box, toolbarview > .bottom-bar headerbar > windowhandle > box, headerbar.flat > windowhandle > box, window.shortcuts headerbar.titlebar > windowhandle > box, window.print headerbar.titlebar > windowhandle > box, window.pagesetup headerbar.titlebar > windowhandle > box, window.aboutdialog headerbar.titlebar > windowhandle > box, window.colorchooser headerbar.titlebar > windowhandle > box, window.appchooser headerbar.titlebar > windowhandle > box { padding-bottom: 6px; }
 
