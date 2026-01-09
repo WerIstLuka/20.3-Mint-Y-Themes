@@ -2379,7 +2379,7 @@ window.devel dialog toolbarview > .top-bar { background-image: unset; background
 
 tooltip { padding: 6px 10px; border-radius: 2px; box-shadow: none; }
 
-tooltip.background { background-color: rgba(0, 0, 0, 0.8); background-clip: padding-box; border: 1px solid rgba(255, 255, 255, 0.1); color: white; }
+tooltip.background { background-color: #fbeaa0; background-clip: padding-box; border: 1px solid #d0d0d0; color: #4a4a4a; }
 
 tooltip > box { border-spacing: 6px; }
 
