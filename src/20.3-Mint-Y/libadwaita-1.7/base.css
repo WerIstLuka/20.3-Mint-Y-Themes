@@ -576,6 +576,8 @@ columnview:drop(active), treeview.view:drop(active), window.print:not(.ssd-frame
 
 columnview > header > button, treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { background-color: #353535; padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px; border-radius: 0; box-shadow: none; line-height: 100%; border: 1px solid #232323; }
 
+popover.menu modelbutton { background-color: transparent; border: none}
+
 columnview > header > button:first-child, treeview.view > header > button:first-child, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button:first-child { border-left-width: 0; }
 
 columnview > header > button > box, treeview.view > header > button > box, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button > box { color: color-mix(in srgb, currentColor 40%, transparent); border-spacing: 6px; }
