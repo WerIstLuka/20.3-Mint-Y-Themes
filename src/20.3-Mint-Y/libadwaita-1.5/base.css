@@ -129,17 +129,17 @@ box button:not(.flat):not(.raised):not(.suggested-action).image-button:not(.spin
 	border-radius: 2px;
 }
 
-button:dir(ltr):not(first-child).flat, button:dir(ltr):not(last-child).flat, button:dir(rtl):not(first-child).flat, button:dir(rtl):not(last-child).flat {
+headerbar button.flat, headerbar stackswitcher button {
 	border-radius: 0px;
 	outline-offset: 0px;
 	outline: 1px solid #232323;
 }
 
-button:dir(ltr):first-child.flat, button:dir(rtl):last-child.flat {
+headerbar button:dir(ltr):first-child.flat, headerbar button:dir(rtl):last-child.flat, headerbar stackswitcher button:dir(ltr):first-child, headerbar stackswitcher button:dir(rtl):last-child {
 	border-top-left-radius: 2px; border-bottom-left-radius: 2px;
 }
 
-button:dir(ltr):last-child.flat, button:dir(rtl):first-child.flat {
+headerbar button:dir(ltr):last-child.flat, headerbar button:dir(rtl):first-child.flat, headerbar stackswitcher button:dir(ltr):last-child, headerbar stackswitcher button:dir(rtl):first-child {
 	border-top-right-radius: 2px; border-bottom-right-radius: 2px;
 }
 
