@@ -574,7 +574,7 @@ columnview.view:disabled, treeview.view:disabled, window.print:not(.ssd-frame) c
 
 columnview:drop(active), treeview.view:drop(active), window.print:not(.ssd-frame) treeview.dialog-action-box:drop(active) { box-shadow: none; }
 
-columnview > header > button, treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { background-color: transparent; padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px; border-radius: 0; box-shadow: none; line-height: 100%; border-left: 1px solid transparent; }
+columnview > header > button, treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { background-color: #353535; padding-top: 3px; padding-bottom: 3px; padding-left: 6px; padding-right: 6px; border-radius: 0; box-shadow: none; line-height: 100%; border: 1px solid #232323; }
 
 columnview > header > button:first-child, treeview.view > header > button:first-child, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button:first-child { border-left-width: 0; }
 
@@ -730,7 +730,7 @@ treeview.view > dndtarget:drop(active).after, window.print:not(.ssd-frame) treev
 
 treeview.view > dndtarget:drop(active).before, window.print:not(.ssd-frame) treeview.dialog-action-box > dndtarget:drop(active).before { border-bottom-style: none; }
 
-treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { padding-left: 4px; padding-right: 4px; border-bottom: 1px solid color-mix(in srgb, currentColor var(--border-opacity), transparent); }
+treeview.view > header > button, window.print:not(.ssd-frame) treeview.dialog-action-box > header > button { padding-left: 4px; padding-right: 4px; border-bottom: 1px solid #232323; }
 
 treeview.view.progressbar, window.print:not(.ssd-frame) treeview.progressbar.dialog-action-box { box-shadow: none; }
 
@@ -964,7 +964,7 @@ filechooser paned.horizontal > separator:backdrop { transition: box-shadow 200ms
 /* Fix header bar height in the file chooser */
 window.filechooser headerbar box.start + box.vertical { margin-top: -6px; margin-bottom: -6px; min-height: 12px; }
 
-headerbar { min-height: 47px; background-color: var(--headerbar-bg-color); color: var(--headerbar-fg-color); box-shadow: inset 0 -1px var(--headerbar-shade-color), inset 1px 0 color-mix(in srgb, var(--headerbar-border-color) var(--border-opacity), transparent), inset -1px 0 color-mix(in srgb, var(--headerbar-border-color) var(--border-opacity), transparent); margin-left: -1px; margin-right: -1px; }
+headerbar { min-height: 47px; background-color: @luka_titlebar; color: var(--headerbar-fg-color); box-shadow: inset 0 -1px var(--headerbar-shade-color), inset 1px 0 color-mix(in srgb, var(--headerbar-border-color) var(--border-opacity), transparent), inset -1px 0 color-mix(in srgb, var(--headerbar-border-color) var(--border-opacity), transparent); margin-left: -1px; margin-right: -1px; }
 
 headerbar > windowhandle > box { padding: 6px 7px 7px 7px; }
 
@@ -974,7 +974,7 @@ headerbar > windowhandle > box > box.start:dir(ltr), headerbar > windowhandle > 
 
 headerbar > windowhandle > box > box.start:dir(rtl), headerbar > windowhandle > box > box.end:dir(ltr), headerbar > windowhandle > box > widget > box.start:dir(rtl), headerbar > windowhandle > box > widget > box.end:dir(ltr) { margin-left: 6px; }
 
-headerbar:backdrop { background-color: var(--headerbar-backdrop-color); transition: background-color 200ms ease-out; }
+headerbar:backdrop { background-color: @luka_titlebar; transition: background-color 200ms ease-out; }
 
 headerbar:backdrop > windowhandle { filter: opacity(0.5); transition: filter 200ms ease-out; }
 
@@ -1000,7 +1000,7 @@ window:not(.ssd-frame) > headerbar.titlebar.default-decoration, window:not(.ssd-
 
 window:not(.ssd-frame) > headerbar.titlebar.default-decoration > windowhandle > box, window:not(.ssd-frame) > .titlebar headerbar.default-decoration > windowhandle > box { padding-bottom: 3px; }
 
-toolbarview > .top-bar headerbar, toolbarview > .bottom-bar headerbar, headerbar.flat, window.shortcuts:not(.ssd-frame) headerbar.titlebar, adaptive-preview headerbar.adaptive-mode-flat, window.print:not(.ssd-frame) headerbar.titlebar, window.pagesetup:not(.ssd-frame) headerbar.titlebar, window.aboutdialog:not(.ssd-frame) headerbar.titlebar, window.colorchooser:not(.ssd-frame) headerbar.titlebar, window.appchooser:not(.ssd-frame) headerbar.titlebar { background: @luka_titlebar; box-shadow: none; color: inherit; min-height: 46px; }
+toolbarview > .top-bar headerbar, toolbarview > .bottom-bar headerbar, headerbar.flat, window.shortcuts:not(.ssd-frame) headerbar.titlebar, adaptive-preview headerbar.adaptive-mode-flat, window.print:not(.ssd-frame) headerbar.titlebar, window.pagesetup:not(.ssd-frame) headerbar.titlebar, window.aboutdialog:not(.ssd-frame) headerbar.titlebar, window.colorchooser:not(.ssd-frame) headerbar.titlebar, window.appchooser:not(.ssd-frame) headerbar.titlebar { background: none; box-shadow: none; color: inherit; min-height: 46px; }
 
 toolbarview > .top-bar headerbar > windowhandle > box, toolbarview > .bottom-bar headerbar > windowhandle > box, headerbar.flat > windowhandle > box, window.shortcuts:not(.ssd-frame) headerbar.titlebar > windowhandle > box, adaptive-preview headerbar.adaptive-mode-flat > windowhandle > box, window.print:not(.ssd-frame) headerbar.titlebar > windowhandle > box, window.pagesetup:not(.ssd-frame) headerbar.titlebar > windowhandle > box, window.aboutdialog:not(.ssd-frame) headerbar.titlebar > windowhandle > box, window.colorchooser:not(.ssd-frame) headerbar.titlebar > windowhandle > box, window.appchooser:not(.ssd-frame) headerbar.titlebar > windowhandle > box { padding-bottom: 6px; }
 
