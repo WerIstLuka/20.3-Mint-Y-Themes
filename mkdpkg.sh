@@ -10,5 +10,5 @@ dpkg-deb --root-owner-group --build "package" > /dev/null
 mv package.deb 20.3-Mint-Y-Themes.deb
 rm -rf package
 
-"making tar achive"
+echo "making tar achive"
 tar -czf 20.3-Mint-Y-Themes.tar.gz usr
