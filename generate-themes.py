@@ -57,7 +57,7 @@ for color in y_hex_colors1.keys():
                 change_value(key, "%s-%s" % (original_name, color), theme_index)
 
             # Regenerate libadwaita-1.5 sass
-            os.system("cp -R src/20.3-Mint-Y-Luka/libadwaita-1.5/sass %s/libadwaita-1.5/" % theme)
+            os.system("cp -R src/20.3-Mint-Y/libadwaita-1.5/sass %s/libadwaita-1.5/" % theme)
             y_colorize_directory("%s/libadwaita-1.5/sass" % theme, color)
             os.chdir("%s/libadwaita-1.5" % theme)
 
