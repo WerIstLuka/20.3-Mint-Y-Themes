@@ -256,3 +256,15 @@ tab {
 tab.needs-attention {
   @extend %adwaita_needs_attention;
 }
+
+dropdown popover listview.view > row {transition: none;}
+
+.data-table listview > row.activatable {
+  transition: none;
+  &:hover {
+    background: $base_color;
+    &:selected {
+      background: $selected_bg_color;
+    }
+  }
+}
